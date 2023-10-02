@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/fazer-pedido.css">
+    <title>Pedido - Pizzaria Farias</title>
+</head>
+
+<body>
+    <section id="screenMaker">
+
+        <header class="header-container">
+            <div class="icone-localizacao">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="texto-localizacao">
+                <p>Endereço:</p>
+                <p id="localizacao">Digital College Aldeota</p>
+            </div>
+        </header>
+
+        <main>
+            <h1>Monta a melhor <span class="red-color">Pizza</span> para tu!</h1>
+            <ul class="massa-container" id="massa-container">
+                <h2 class="titulo">Massa:</h2>
+            </ul>
+
+            <ul class="molho-container" id="molho-container">
+                <h2 class="titulo">Molho:</h2>
+            </ul>
+
+            <ul class="tipo-container" id="tipo-container">
+                <h2 class="titulo">Tipo:</h2>
+            </ul>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <button class="hidden" id="finalizarPedido">Finalizar Pedido</button>
+            </div>
+        </footer>
+        <script type="module" src="../js/app.js"></script>
+    </section>
+
+    <section id="screenPizza" class="hidden">
+        <div class="container-screenPizza">
+            <div class="header-pizza">
+                <div class="header-pizza-container">
+                    <div class="btn-return">
+                        <i id="buttonBack" class="fa-solid fa-angle-left"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-chamativo-pizza">
+                <p>SE GARANTIU NA ESCOLHA!</p>
+                <span>BOM APETITE</span>
+            </div>
+            <div id="imagens">
+                <img id="imageMassa" src="../assets/pizzas/massa-tradicional.png" alt="Massa da Pizza">
+                <img class="hidden" id="imageMolhoPesto" src="../assets/pizzas/molho-pesto.png" alt="Molho Pesto">
+                <img class="hidden" id="imageMolhoDeTomate" src="../assets/pizzas/molho-tomate.png"
+                    alt="Molho de Tomate">
+                <img class="hidden" id="imageVegetarianaNaoVegetriana" src="../assets/pizzas/vegetariana.png"
+                    alt="Non-Veg">
+                <img class="hidden" id="imageVegetariana" src="../assets/pizzas/nao-vegetariana.png" alt="Non-Veg">
+                <img class="hidden" id="imageNaoVegetariana" src="../assets/pizzas/vegetariana.png" alt="Non-Veg">
+            </div>
+            <footer>
+                <div class="btn-acompanhar">
+                    <div class="img-propaganda">
+                        <img src="../assets/logos/garota-com-pizza.png" alt="">
+                    </div>
+                    <a href="../html/status-pedido.html">Acompanhar Pedido</a>
+                </div>
+            </footer>
+        </div>
+        <script src="../js/app.js"></script>
+    </section>
+
+</body>
+
+</html>

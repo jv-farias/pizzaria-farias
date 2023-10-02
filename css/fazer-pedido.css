@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red;
+    outline-offset: -1px; */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F2F2;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background-color: #8C031C;
+    padding: 1rem 4rem;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    transition: transform .3s;
+    animation: fromTop .7s;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icone-localizacao i {
+    display: flex;
+    font-size: 1.7rem;
+}
+
+#localizacao {
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    transition: transform .3s;
+    animation: fromTop .7s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fromBottom .7s backwards;
+}
+
+
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main h1 {
+    padding: 2rem 3rem 0 3rem;
+    text-align: center;
+    color: #272A3C;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.red-color {
+    color: #8C031C;
+}
+
+.titulo {
+    text-align: center;
+    color: #FB7908;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* ESTILIZAÇÃO DA MAIN - ESCOLHA DAS MASSAS, MOLHOS E TIPO */
+
+.massa-container,
+.molho-container,
+.tipo-container {
+    padding: 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.tipo-card {
+    margin-bottom: 2rem;
+}
+
+.massa-card,
+.molho-card,
+.tipo-card {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.massa-content,
+.molho-content,
+.tipo-content {
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.img-massa,
+.img-molho,
+.img-tipo {
+    display: flex;
+    justify-content: center;
+    width: 8.5rem;
+    height: 8.5rem;
+    flex: 1;
+}
+
+.text-massa,
+.text-molho,
+.text-tipo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.nome-massa,
+.nome-molho,
+.nome-tipo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.descricao-massa,
+.descricao-molho,
+.descricao-tipo {
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.footer-container {
+    padding: 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+    background-color: #8C031C;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+}
+
+/* TELA PIZZA PRONTA */
+
+.container-screenPizza {
+    transition: transform .3s;
+    animation: fromBottom .7s;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-pizza {
+    width: 100%;
+}
+
+.header-pizza-container {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.btn-return {
+    padding: .5rem 1rem;
+    background: #8C031C;
+    color: white;
+    font-size: 20px;
+    border-radius: 1rem;
+}
+
+.text-chamativo-pizza {
+    width: 100%;
+    background-color: #8C031C;
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-chamativo-pizza p,
+.text-chamativo-pizza span {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+#imagens {
+    width: 320px;
+    height: 320px;
+    position: relative;
+}
+
+#img-client {
+    padding-top: 12px;
+    width: 152px;
+    height: 200px;
+}
+
+#imagens img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 55px;
+}
+
+#imagens #imageMassa {
+    width: 210px;
+    height: 210px;
+    top: 90px;
+    left: 50px;
+}
+
+.img-icon {
+    width: 40px;
+}
+
+.btn-acompanhar {
+
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-acompanhar a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border-radius: 0.5rem;
+    background-color: #FB7908;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.img-propaganda {
+    transition: transform .3s;
+    animation: fromBottom .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.img-propaganda img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

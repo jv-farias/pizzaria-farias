@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: transform .3s;
+    animation: fromTop .7s;
+    padding: 1rem 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 248, 248);
+    background-image: url(../assets/logos/image\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+.header-container {
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.btn-return a {
+    padding: .5rem 1rem;
+    background: #8C031C;
+    color: white;
+    font-size: 20px;
+    border-radius: 1rem;
+}
+
+main {
+    padding: 1rem;
+    width: 100vw;
+
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.entregador-container {
+    transition: transform .3s;
+    animation: fromBottom .7s;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-shadow: .5px .5px 10px rgba(0, 0, 0, 0.411);
+}
+
+.text-info p {
+    color: #8C031C;
+    font-size: 1rem;
+}
+
+.entregador-info {
+    padding: 0.75rem;
+    width: 100%;
+    background-color: white;
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.img-entregador {
+    width: 5rem;
+    display: flex;
+}
+
+.img-entregador img {
+    width: 100%;
+}
+
+.nome-entregador {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+#nome-entregador {
+    color: #8C031C;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#tempo-entrega {
+    color: #a94255b0;
+    font-size: 0.8rem;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.github a {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 0px rgba(90, 108, 234, 0.07);
+    width: 100%;
+    font-weight: 700;
+    padding: 1rem 7rem;
+    color: white;
+    background-color: #8C031C;
+}
